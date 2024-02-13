@@ -52,5 +52,5 @@ The Real-Time Transcription App enables users to transcribe audio in real time u
 
 ## Credits
 
-This project was developed by [Your Name](https://github.com/hedhoud).
+This project was developed by [Hedi Naouara](https://github.com/hedhoud).
 
