@@ -147,7 +147,7 @@ async def send_receive(ws_api):
                             if text:
                                 text += "\n"
                             text += line
-                            
+                            st.session_state["text"] = text
                             js=f"""
                                 window.parent.document.getElementById("text-holder").innerHTML = ` { text }`;
                             """
@@ -172,7 +172,6 @@ async def send_receive(ws_api):
         print("\nKeyboard interrupt")     
 
     if st.session_state['run'] == False:
-        st.session_state["text"] = text
         transcription_txt = open('transcription.txt', 'a')
         transcription_txt.write(st.session_state['text'])
         transcription_txt.write(' ')
